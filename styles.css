@@ -1,16 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet")
-bbody {
+body {
   color: #555;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Libre Baskerville', serif;
  }
 
 /*header set*/
+.header2 {
+  width: auto;
+  height: 200px;
+  margin: auto;
+  background: url(road_01.jpg) center no-repeat;
+  box-shadow: 0 12px 15px -6px gray;
+}
 #header {
-  background-color: #1abc9c;
+  width: center;
   height: 150px;
   line-height: 150px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 0.1em;
 }
 #header a{
@@ -18,13 +25,17 @@ bbody {
   test-decoration: none;
 }
 #header a:hover {
-  color: #222;
+  text-shadow: 0 0 10px #d2d2d2;
 }
 #header-title {
   display: block;
   float: left;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bold;
+  text-shadow: 0 1px 0 black;
+  /*font-family: 'Dancing Script', cursive;*/
+  font-family: 'Kaushan Script', cursive;
+  /*font-family: 'Lobster Two', cursive;*/
 }
 #header-nav {
   display: block;
@@ -34,6 +45,8 @@ bbody {
 #header-nav li {
   display: inline;
   padding-left: 20px;
+  text-shadow: 0 1px 0 black;
+
 }
 .container {
   max-width: 1000px;
@@ -44,17 +57,26 @@ bbody {
 .post, .about {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
 }
-.post-author img,
+.post-author img {
+  width: 20%;
+  height: auto;
+  vertical-align: bottom;
+  border-radius: 30%;
+  box-shadow: 0 -4px 25px -6px gray;
+}
+
 .about-author img {
-  width: 50px;
-  height: 60px;
+  width: 50%;
+  height: auto;
   vertical-align: middle;
-  border-radius: 50%;
+  border-radius: 70%;
+  box-shadow: 0 5px 20px -6px gray;
 }
 .post-container:nth-child(even) {
   background-color: #f2f2f2;
+  box-shadow: 0 -1px 20px 3px gray;
 }
 .post-author span {
   margin-left: 16px;
@@ -72,6 +94,7 @@ h1, h2, h3, h4 {
 p {
   line-height: 1.5;
 }
+
 /*about*/
 .about {
   text-align: center;
@@ -93,7 +116,6 @@ p {
 .column {
   min-width: 300px;
   display: inline-block;
-  vertical-align: top;
 }
 
 a {

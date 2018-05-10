@@ -3,11 +3,12 @@
   <head>
     <title>My Blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville+Script|Kaushan+Script|Lobster+Two" rel="stylesheet">
   </head>
   <body>
-    <div id="header">
+    <div id="header" class="header2">
       <div class="container">
-        <a id="header-title" href="index.html">My Blog</a>
+        <a id="header-title" href="index.html">Fui embora & Agora?</a>
         <ul id="header-nav">
           <li>
             <a href="about.html">About</a>
@@ -23,30 +24,54 @@
         <div class="post">
           <div class="post-author">
             <img src="IMG_1470.jpg">
-            <span>Me</span>
+            <span>Gutu Galuppo</span>
           </div>
           <p class="post-date">08.09.2018</p>
           <h3 class="post-title">Becoming a web developer</h3>
           <div class="post-content">
             <p>If somebody heve told me a week a go that I would be able to make a <strong>website</strong>, I would not have believed them.</p>
-            <p>Just a few days later, I came across <a href="http://getmimo.com">Mimo</a> and started to work on a <em>real</em> bleg.</p>
+            <p>Just a few days later, I came across <a href="http://getmimo.com" target="_blank">Mimo</a> and started to work on a <em>real</em> bleg.</p>
           </div>
         </div>
       </div>
-          <div id="content">
-            <div class="post-container">
-              <div class="post">
-                <div class="post-author">
-                  <img src="kitten.jpg">
-                  <spam>HackerKitten</spam>
-                </div>
-                <p class="post-date">Today</p>
-                <h4 class="post-title">This guy is a genius</h4>
-                <div class="post content">
-                  <p>Hi fellows! I'm the <em><strong>Hacker Kitten</strong></em>. Most known as <em>HK</em>!</p>
-              </div>
-            </div>
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="Nica_0040.jpg">
+            <spam>Nica Wissmann</spam>
           </div>
+          <p class="post-date">09.04.1985</p>
+          <h4 class="post-title">This girl is awesome!</h4>
+          <div class="post content">
+            <p>Hey peeps! I'm the <em><strong>Wonder Woman</strong></em>. Most known as <em>WW</em>!</p>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="Noah_0010.jpg">
+            <spam>Noah WGA</spam>
+          </div>
+          <p class="post-date">08.09.2009</p>
+          <h4 class="post-title">This guy is a genius! =)</h4>
+          <div class="post content">
+            <p>Hi fellows! I'm the <em><strong>Black Boy</strong></em>. Most known as <em>BB</em>!</p>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="Gael_0005.jpeg">
+            <spam>Gael WGA</spam>
+          </div>
+          <p class="post-date">25.09.2016</p>
+          <h4 class="post-title">This guy is a genius</h4>
+          <div class="post content">
+            <p>Hi fellows! I'm the <em><strong>Baby Hulk</strong></em>. Most known as <em>BH</em>!</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -54,9 +79,9 @@
         <div class="column">
           <h4>My Links</h4>
           <p>
-            <a href="https://www.linkedin.com/in/augusto-galuppo-b687b824/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/augusto-galuppo-b687b824/" target="_blank">LinkedIn</a>
             <br>
-            <a href="https://www.facebook.com/gutu.galuppo">Facebook</a>
+            <a href="https://www.facebook.com/gutu.galuppo" target="_blank">Facebook</a>
           </p>
         </div>
         <div class="column">
@@ -66,4 +91,16 @@
       </div>
     </div>
   </body>
+  <script>
+   $("#slideshow > div:gt(0)").hide();
+
+   setInterval(function() {
+     $('#slideshow > div:first')
+       .fadeOut(1000)
+       .next()
+       .fadeIn(1000)
+       .end()
+       .appendTo('#slideshow');
+   }, 3000);
+  </script>
 </html>
