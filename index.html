@@ -3,8 +3,6 @@
   <head>
     <title>My Blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville+Script|Kaushan+Script|Lobster+Two" rel="stylesheet">
-  </head>
   <body>
     <div id="header" class="header2">
       <div class="container">
@@ -91,16 +89,4 @@
       </div>
     </div>
   </body>
-  <script>
-   $("#slideshow > div:gt(0)").hide();
-
-   setInterval(function() {
-     $('#slideshow > div:first')
-       .fadeOut(1000)
-       .next()
-       .fadeIn(1000)
-       .end()
-       .appendTo('#slideshow');
-   }, 3000);
-  </script>
 </html>
